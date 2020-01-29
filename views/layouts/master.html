@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <title>Cashbaba || Home</title>
+  <!-- Bootstrap Embed   -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/css/final.css" />
+  <link rel="icon" href="/images/icon.jpeg" type="image/gif" sizes="16x16" />
+  {% block css_block %}{% endblock %}
+</head>
+
+<body>
+  <!--  Preloader start  -->
+  <div class="loader">
+    <div class="preloader">
+      <div class="circle circle1"></div>
+      <div class="circle circle2"></div>
+      <div class="circle circle3"></div>
+    </div>
+  </div>
+  <!--  Preloader end  -->
+
+  <!-- arrow start   -->
+  <div class="arrow_top">
+    <div class="button_arrow">
+      <a href="#header_part"><img src="images/arrow-pointing-to-right.svg" alt="" /></a>
+    </div>
+  </div>
+  <!-- arrow end   -->
+
+  <!-- nav part start -->
+  <nav>
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-lg-2 col-6">
+          <div class="logo">
+            <a href="/" class="{% if page_title == 'index' %} active_anchor{% endif %}"><img src="images/logo.png"
+                class="img-fluid" alt="logo" /></a>
+            <a href="/" class="{% if page_title == 'index' %} active_anchor{% endif %}"><img
+                src="images/logo-mobile.png" class="img-fluid d-none" alt="logo" /></a>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="nav_item text-right">
+            <ul>
+              <li>
+                <a href="/" class="{% if page_title == 'index' %} active_anchor{% endif %}">Home</a>
+              </li>
+              <li>
+                <a href="/about" class="{% if page_title == 'about' %} active_anchor{% endif %}">About Us</a>
+              </li>
+              <li>
+                <a href="/features" class="{% if page_title == 'features' %} active_anchor{% endif %}">Features</a>
+              </li>
+              <li>
+                <a href="/personal" class="{% if page_title == 'personal' %} active_anchor{% endif %}">Personal</a>
+              </li>
+              <li>
+                <a href="/business" class="{% if page_title == 'business' %} active_anchor{% endif %}">Business</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="nav_buttons text-right">
+            <!-- <a href="#"><span></span>Login</a>
+              <a href="#"><span></span>Sign Up</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- nav part end -->
+
+  <!-- my code write here-->
+  {% block main_block %}{% endblock %}
+  <!-- my code write here-->
+
+  <section class="footer_link">
+    <div class="container">
+      <div class="row  justify-content-start">
+        <div class="col-lg-3 col-md-3">
+          <div class="quick_link">
+            <h2>Personal Wallet</h2>
+            <ul>
+              <li><a href="/personal#fee-personal-pbenefits" id="pbenefits">Benefits</a></li>
+              <li><a href="/personal#fee-personal-pfeatures" id="pfeatures">Features</a></li>
+              <li><a href="/personal#fee-personal-pfees" id="pfees">Fees</a></li>
+              <li><a href="/personal#fee-personal-plimits" id="plimits">Limits</a></li>
+              <li><a href="/terms-personal">Terms & conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-3">
+          <div class="quick_link">
+            <h2>Business Wallet</h2>
+            <ul>
+              <li><a href="/business#fee-business-bbenefits" id="bbenefits">Benefits</a></li>
+              <li><a href="/business#fee-business-bfeatures" id="bfeatures">Features</a></li>
+              <li><a href="/business#fee-business-bfees" id="bfees">Fees</a></li>
+              <li><a href="/business#fee-business-blimits" id="blimits">Limits</a></li>
+              <li><a href="/terms-business">Terms & conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2">
+          <div class="quick_link">
+            <h2>Other links</h2>
+            <ul>
+              <li><a href="/privacy-policy">Privacy Policy</a></li>
+              <li><a href="/security">Security</a></li>
+              <li>
+                <a href="/faq" class="{% if page_title == 'faq' %} active_anchor{% endif %}">FAQ</a>
+              </li>
+              <li><a href="/user-manual-personal"
+                  class="{% if page_title == 'user-manual-personal' %} active_anchor{% endif %}">User
+                  Manual(Personal)</a></li>
+              <li><a href="/user-manual-business"
+                  class="{% if page_title == 'user-manual-personal' %} active_anchor{% endif %}">User
+                  Manual(Business)</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4">
+          <div class="subscription_form">
+            <h2>Subscribe to our newsletter</h2>
+            <div class="col-lg-10 m-0 p-0">
+              <form class="text-left">
+                <div class="row">
+                  <div class="col-lg-10 col-10">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter your email address" />
+                    </div>
+                  </div>
+                  <div class="col-lg-2 col-2">
+                    <button type="submit" class="" style="background-image: url(images/sent-mail.svg)"></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_copyright text-center">
+      <p>
+        &copy; 2014-2019 Recursion Fintech Ltd. All Right Reserved.
+      </p>
+    </div>
+  </section>
+  <!-- newsletter subscription end -->
+
+  <!-- Jquery CDN script   -->
+
+  <script src="/js/jquery-3.4.1.min.js"></script>
+  <script src="/js/popper.min.js"></script>
+  <script src="/js/bootstrap.min.js"></script>
+  {% block js_block %}{% endblock %}
+  <script src="/js/animate-scroll.js"></script>
+  <script src="/js/scroll-animation.js"></script>
+  <script src="/js/jquery.wavify.js"></script>
+  <script src="/js/wavify.js"></script>
+  <script src="/js/flickity.pkgd.js"></script>
+  <script src="/js/flickity-fade.js"></script>
+  <!-- <script src="/js/iziModal.min.js"></script> -->
+  <script src="/js/jquery.parallax.min.js"></script>
+  <script src="/js/TweenMax.min.js"></script>
+  <script src="/js/TimelineMax.min.js"></script>
+  <script src="/js/ScrollMagic.min.js"></script>
+  <script src="/js/animation.gsap.min.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/footer-redirect.js"></script>
+</body>
+
+</html>
