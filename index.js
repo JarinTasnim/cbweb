@@ -1,12 +1,21 @@
 const express = require('express');
 const cons = require('consolidate');
+var helmet = require('helmet');
+var session = require('express-session');
 const app = express();
+app.use(helmet());
+app.set('trust proxy', 1) // trust first proxy
+app.use(session({
+  secret: 'cashbabaRcis',
+  resave: false,
+  saveUninitialized: true,
+  cookie: { secure: true }
+}))
 const port = 3000;
 
 
 
-var helmet = require('helmet');
-app.use(helmet());
+
 
 // html engine added
 app.engine('html', cons.nunjucks);
