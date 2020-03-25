@@ -6,10 +6,12 @@ const app = express();
 app.use(helmet());
 app.set('trust proxy', 1) // trust first proxy
 app.use(session({
-  secret: 'cashbabaRcis',
-  resave: false,
-  saveUninitialized: true,
-  cookie: { secure: true }
+    secret: 'cashbabaRcis',
+    resave: false,
+    saveUninitialized: true,
+    cookie: {
+        secure: true
+    }
 }))
 const port = 3000;
 
