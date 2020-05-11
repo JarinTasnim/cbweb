@@ -48,6 +48,10 @@ router.get("/security", (req, res) => {
   res.render("security");
 });
 
+router.get("/pci-dss-equirements", (req, res) => {
+  res.render("pci-dss-equirements");
+});
+
 router.get("/terms-business", (req, res) => {
   res.render("terms-business");
 });
