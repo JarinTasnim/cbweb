@@ -1,0 +1,25 @@
+{
+   "person": [
+        {
+            "priority": "1",
+            "publishDate": "2021-02-22 11:00:00",
+            "validTill": "2021-02-25 11:00:00",
+            "imageUrl1": "images/about-bg.png",
+            "imageUrl2": "2021-02-25 11:00:00",
+            "imageUrl3": "2021-02-25 11:00:00",
+            "content": "Recursion FinTech Limited (RFTL) is the only PCI DSS, ISO 9001 and ISO 27001 certified Payment Service Provider (PSP) in Bangladesh. We are the first complete and most secure e-wallet service provider in this country.",
+            "videoUrl": "2021-02-25 11:00:00"
+        }
+        ,
+        {
+            "priority": "1",
+            "publishDate": "2021-02-22 11:00:00",
+            "validTill": "2021-02-25 11:00:00",
+            "imageUrl1": "images/about-bg.png",
+            "imageUrl2": "2021-02-25 11:00:00",
+            "imageUrl3": "2021-02-25 11:00:00",
+            "content": "Recursion FinTech Limited (RFTL) is the only PCI DSS, ISO 9001 and ISO 27001 certified Payment Service Provider (PSP) in Bangladesh. We are the first complete and most secure e-wallet service provider in this country.",
+            "videoUrl": "2021-02-25 11:00:00"
+        }
+    ] 
+}

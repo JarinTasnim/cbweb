@@ -24,6 +24,10 @@ router.get("/business", (req, res) => {
   res.render("business");
 });
 
+router.get("/offers", (req, res) => {
+  res.render("offers");
+});
+
 router.get("/faq", (req, res) => {
   res.render("faq");
 });
