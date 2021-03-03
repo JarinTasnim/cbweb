@@ -24,8 +24,12 @@ router.get("/business", (req, res) => {
   res.render("business");
 });
 
-router.get("/offers", (req, res) => {
-  res.render("offers");
+router.get("/offers/demo-offer1", (req, res) => {
+  res.render("offers/demo-offer1");
+});
+
+router.get("/offer-main", (req, res) => {
+  res.render("offer-main");
 });
 
 router.get("/faq", (req, res) => {

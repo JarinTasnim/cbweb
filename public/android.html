@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+//alert(urlParams.get('Phone'));
+var Tawk_API=Tawk_API||{};
+Tawk_API.visitor = {
+	name :  urlParams.get('Name'),
+	email : urlParams.get('Phone') + '@android.cb'
+};
+var Tawk_LoadStart=new Date();
+// <!-- rest of the tawk.to widget code -->
+(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/5fb651e1920fc91564c88bf0/default';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+</head>
+<body>
+
+</body>
+</html>
