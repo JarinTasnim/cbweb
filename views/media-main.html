@@ -1,0 +1,116 @@
+{% extends "layouts/master.html" %} {% set page_title = "media-main" %} {% block
+    main_block %}
+    <!-- header part start  -->
+    <header id="header_part" class="personal_page">
+      <div class="overlay_mobile d-none"></div>
+      <div class="overlay_down d-none"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 order-lg-1 order-2">
+            <div class="header_content text-center">
+    
+            </div>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="col-lg-12 order-lg-2 order-1 text-center m-0 p-0">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="w-100" src="images/media-img/media-banner-1.jpg" alt="First slide">
+                </div>
+                <!-- <div class="carousel-item">
+                  <img class="w-100" src="images/offer/win-martphone.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="w-100" src="images/offer/cashback-on-qr-payment.jpg" alt="Third slide">
+                </div> -->
+              </div>
+            </div>
+            <!-- <div class="personal_page_img">
+              <img src="images/offer/cashback-on-mobile-recharge.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="menu_bar d-none">
+              <p>
+                <span></span>
+                <span></span>
+                <span></span>
+              </p>
+            </div>         -->
+          </div>
+        </div>
+    
+        <div id="offerId">
+          
+        </div>
+      </div>
+    </header>
+    <!-- header part end  -->
+    
+    <!-- newsletter subscription start -->
+    <section class="newsletter_part">
+      <div class="wavify_animation">
+        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="wave_six">
+          <defs></defs>
+          <path id="feel-the-wave-six" d="" />
+        </svg>
+        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="wave_six">
+          <defs></defs>
+          <path id="feel-the-wave-seven" d="" />
+        </svg>
+        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="wave_six">
+          <defs></defs>
+          <path id="feel-the-wave-eight" d="" />
+        </svg>
+        <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" class="wave_six">
+          <defs></defs>
+          <path id="feel-the-wave-nine" d="" />
+        </svg>
+      </div>
+    </section>
+    
+    <script type="text/javascript">
+      function readTextFile(file, callback) {
+        var rawFile = new XMLHttpRequest();
+        rawFile.overrideMimeType("application/json");
+        rawFile.open("GET", file, true);
+        rawFile.onreadystatechange = function() {
+          if (rawFile.readyState === 4 && rawFile.status == "200") {
+            callback(rawFile.responseText);
+          }
+        }
+        rawFile.send(null);
+      }
+    
+      //usage:
+      readTextFile("medias.json", function(text){
+        var data = JSON.parse(text);
+    
+        var target = document.getElementById('offerId');  
+        var htmlContent = "";
+    
+        for (i = 0; i < data.newses.length; i++) {
+          htmlContent += '<div class="row">';
+          htmlContent += '<div class="col-lg-4 col-md-4" style="padding: 0px 6px 0px 0px;">';
+          htmlContent += '<div class="benefits_card" style="padding: 30px 0px 30px 0px;">';
+          htmlContent += '<div class="benefits_title">';
+          htmlContent += '<div class="personal_page_img">';
+          htmlContent += '<img src="' + data.newses[i].newsLogoImage +  '" class="img-fluid" alt="" />';
+          htmlContent += '</br><span style="font-size: 12px;">Puplished: ' + data.newses[i].publishDate +  '</span>';
+          htmlContent += '</div>';
+          htmlContent += '</div>';
+          htmlContent += '</div>';
+          htmlContent += '</div>';
+    
+          htmlContent += '<div class="col-lg-8 col-md-8">';
+          htmlContent += '</br><h5>' + data.newses[i].newsTitle + '</h5>';
+          htmlContent += '</br><p>' + data.newses[i].shortContent + '<a href="' + data.newses[i].newsDetailUrl + '" target="_blank"> Read more...</a></p></br>';
+          htmlContent += '</div>';
+          htmlContent += '</div>';
+    
+          target.innerHTML = htmlContent;    
+        }      
+      });
+    </script>
+    
+    {% endblock %}

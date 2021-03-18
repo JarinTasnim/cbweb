@@ -32,6 +32,10 @@ router.get("/offer-main", (req, res) => {
   res.render("offer-main");
 });
 
+router.get("/media-main", (req, res) => {
+  res.render("media-main");
+});
+
 router.get("/faq", (req, res) => {
   res.render("faq");
 });
