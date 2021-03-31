@@ -1,6 +1,20 @@
 {% extends "layouts/master.html" %} {% set page_title = "offer-main" %} {% block
 main_block %}
 <!-- header part start  -->
+
+<div class="modal hide fade" id="myModal">
+  <div class="modal-header">
+      <a class="close" data-dismiss="modal">×</a>
+      <h3>Modal header</h3>
+  </div>
+  <div class="modal-body">
+      <p>One fine body…</p>
+  </div>
+  <div class="modal-footer">
+      <a href="#" class="btn">Close</a>
+      <a href="#" class="btn btn-primary">Save changes</a>
+  </div>
+</div>
 <header id="header_part" class="personal_page">
   <div class="overlay_mobile d-none"></div>
   <div class="overlay_down d-none"></div>
@@ -69,6 +83,8 @@ main_block %}
   </div>
 </section>
 
+
+
 <script type="text/javascript">
   function readTextFile(file, callback) {
     var rawFile = new XMLHttpRequest();
@@ -115,6 +131,12 @@ main_block %}
 
     }      
   });
+ 
+    
+  
+
+  
 </script>
+
 
 {% endblock %}

@@ -119,7 +119,7 @@
             <h2>Other links</h2>
             <ul>
               <li><a href="/privacy-policy">Privacy Policy</a></li>
-              <li><a href="/pci-dss-equirements">PCI DSS Requirements</a></li>
+              <!-- <li><a href="/pci-dss-equirements">PCI DSS Requirements</a></li> -->
               <li><a href="/security">Security</a></li>
               <li>
                 <a href="/faq" class="{% if page_title == 'faq' %} active_anchor{% endif %}">FAQ</a>
@@ -184,6 +184,26 @@
   <script src="/js/script.js"></script>
   <script src="/js/footer-redirect.js"></script>
 
+  <script type="text/javascript">
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    //alert(urlParams.get('Phone'));
+    var Tawk_API=Tawk_API||{};
+    Tawk_API.visitor = {
+      name :  urlParams.get('Name'),
+      email : urlParams.get('Phone') + '@android.cb'
+    };
+    var Tawk_LoadStart=new Date();
+    // <!-- rest of the tawk.to widget code -->
+    (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5fb651e1920fc91564c88bf0/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
   
 </body>
 
